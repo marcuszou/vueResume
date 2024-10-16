@@ -14,7 +14,7 @@
 |      | 3- Component state and rendering data from it             | 3       | 3      | 3     |           |          |
 | Mod3 | Making the resume editable                                |         |        |       | 01:04     |          |
 |      | 4- Editing the resume content                             | 4       | 4      | 4     |           |          |
-|      | 5- Improving the code structure                           | 5       | 5      | 5     |           |          |
+|      | 5- Improving the code structure                           | 5       | 5      | 5     |           | day 2    |
 |      | 6- Adding and removing entries                            | 6       | 6      | 6     |           |          |
 |      | 7- Toggling edit mode                                     | 7       | 7      | 7     |           |          |
 | Mod4 | Configurable resume styling                               |         |        |       | 00:45     |          |
