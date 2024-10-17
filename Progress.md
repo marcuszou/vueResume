@@ -15,8 +15,8 @@
 | Mod3 | Making the resume editable                                |         |        |       | 01:04     |          |
 |      | 4- Editing the resume content                             | 4       | 4      | 4     |           |          |
 |      | 5- Improving the code structure                           | 5       | 5      | 5     |           |          |
-|      | 6- Adding and removing entries                            | 6       | 6      | 6     |           | day 2    |
-|      | 7- Toggling edit mode                                     | 7       | 7      | 7     |           |          |
+|      | 6- Adding and removing entries                            | 6       | 6      | 6     |           |          |
+|      | 7- Toggling edit mode                                     | 7       | 7      | 7     |           | day 3    |
 | Mod4 | Configurable resume styling                               |         |        |       | 00:45     |          |
 |      | 8- Make styling configurable                              | 8       | 8      | 8     |           |          |
 |      | 9- Configuring the photo                                  | 9       | 9      | 9     |           |          |
