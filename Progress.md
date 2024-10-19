@@ -16,11 +16,11 @@
 |      | 4- Editing the resume content                             | 4       | 4      | 4     |           |          |
 |      | 5- Improving the code structure                           | 5       | 5      | 5     |           |          |
 |      | 6- Adding and removing entries                            | 6       | 6      | 6     |           |          |
-|      | 7- Toggling edit mode                                     | 7       | 7      | 7     |           | day 3    |
-| Mod4 | Configurable resume styling                               |         |        |       | 00:45     |          |
+|      | 7- Toggling edit mode                                     | 7       | 7      | 7     |           |          |
+| Mod4 | Configurable resume styling                               |         |        |       | 00:45     | day 2    |
 |      | 8- Make styling configurable                              | 8       | 8      | 8     |           |          |
 |      | 9- Configuring the photo                                  | 9       | 9      | 9     |           |          |
-| Mod5 | Exporting the PDF, saving the configuration, future steps |         |        |       | 00:35     |          |
+| Mod5 | Exporting the PDF, saving the configuration, future steps |         |        |       | 00:35     | day 3    |
 |      | 10- Export resume as PDF                                  | 10      | 10     | 10    |           |          |
 |      | 11- Save the resume configuration                         | 11      | 11     | 11    |           |          |
 |      | 12- Where to take it from here                            | 12      | 12     |       |           |          |
