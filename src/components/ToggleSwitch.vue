@@ -1,7 +1,9 @@
 <template>
   <label class="switch-wrapper">
+    <span v-if="offLabel" style="margin-right: 10px;">{{ offLabel }}</span>
+
     <div class="switch">
-      <input type="checkbox" checked @click="onToggle">
+      <input type="checkbox" :checked="toggleActive" @click="onToggle">
       <span class="slider"></span>
     </div>
 
@@ -14,6 +16,14 @@ export default {
   props: {
     label: {
       type: String
+    },
+    offLabel: {
+      type: String,
+      default: null
+    },
+    toggleActive: {
+      type: Boolean,
+      default: true
     }
   },
   methods: {
