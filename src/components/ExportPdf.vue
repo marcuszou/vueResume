@@ -18,11 +18,12 @@ export default {
   },
   methods: {
     exportPdf() {
-      const unit = this.resumeFormat == 'a4' ? 'mm' : 'in';
+      const unit = this.resumeFormat == 'letter' ? 'in' : 'mm';
 
       const pdfConfig = {
         margin: 0,
         filename: 'resume',
+        pagebreak: {mode: ['avoid-all','css', 'legacy']},
         jsPDF: {
           unit: unit,
           format: this.resumeFormat,

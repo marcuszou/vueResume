@@ -11,7 +11,7 @@
       <div class="sidebar-section" v-if="!editing">
         <SelectInput
           label="Resume format"
-          :options="[{'name': 'A4', 'value': 'a4'}, {'name': 'Letter', 'value': 'letter'}]"
+          :options="[{'name': 'Letter', 'value': 'letter'}, {'name': 'A4', 'value': 'a4'}]"
           :default-option="resumeFormat"
           @update-selection="resumeFormat = $event"
         />
@@ -108,7 +108,7 @@
       <div
         id="resume"
         class="d-flex"
-        :class="{ 'edit-off': !editing, 'letter-format': resumeFormat == 'letter' }"
+        :class="{ 'edit-off': !editing, 'a4-format': resumeFormat == 'a4' }"
         :style="cssVariables">
         <div class="left-col" :style="{ width: percentageWidthLeft }">
           <ResumeSection>
@@ -386,10 +386,10 @@ export default {
           background: "#ffffff",
         },
       },
-      name: "Michaela Scarn",
-      title: "Senior Data Scientist",
+      name: "Edward Zou",
+      title: "Software Engineer / Data Specialist",
       introText:
-        "From data cleaning to data analysis to machine learning, I am passionate about everything data.",
+        "From full stack development to data analysis, machine learning, I am passionate about engineering data into business portfolio.",
       imageUrl: "/profile_pic.jpg",
       headlines: [
         "About me",
@@ -400,79 +400,80 @@ export default {
         "Education",
       ],
       contact: {
-        phone: "15713909584",
-        email: "contact@gmail.com",
-        address: "Main St 100, 19777 NY",
+        phone: "+1(587)890-1988",
+        email: "edwzou10@gmail.com",
+        address: "Vancouver, BC / Calgary, AB",
       },
       skills: [
-        "Python",
-        "Pandas",
-        "SQL",
-        "R",
-        "AI",
-        "C++",
+        "Java",
+        "C/C++",
+        "PostgreSQL/MySQL",
+        "Python/R/Go",
+        "NoSQL/MongoDB",
+        "Data Science",
         "Machine Learning",
-        "Hadoop",
-        "TensorFlow",
-        "PyTorch",
-        "NLP",
+        "Fullstack Dev",
+        "WebApp Dev",
+        "TypeScript/Angular",
+        "HTML/CSS",
       ],
       highlights: [
-        "Natural Language Processing with Python (Coursera)",
-        "Recommendation Systems with TensorFlow on GCP (Google)",
+        "Microsoft Certified Azure Developer Associate (AZ-204), Jul 2022",
+        "Full Stach Developer",
       ],
       experience: [
         {
-          title: "Senior Data Scientist",
-          company: "ABC Analytics Inc.",
-          location: "London",
-          date: "2022 - Present",
+          title: "Lead Software Developer",
+          company: "SecuTech",
+          location: "Calgary, AB",
+          date: "July 2024 - Present",
           description: [
-            "Led a team of data scientists in developing advanced machine learning models for predictive analytics",
+            "Led a team of software engineers in developing advanced ComputerVision models for capture fraud in gym site",
             "Designed and implemented a recommendation system that boosted cross-selling, leading to a 20% increase in revenue",
-            "Conducted A/B testing and statistical analysis to optimize product features",
           ],
         },
         {
-          title: "Data Scientist",
-          company: "XYZ Data Solutions",
-          location: "London",
-          date: "2017 - 2019",
+          title: "Software Engineering Co-op",
+          company: "Dodge Construction Network",
+          location: "Vancouver, BC",
+          date: "Jan 2022 - Aug 2022",
           description: [
-            "Developed and deployed machine learning models for fraud detection, reducing fraudulent transactions by 18%",
-            "Conducted in-depth exploratory data analysis to identify key trends and insights",
-            "Worked on data preprocessing, feature engineering, and model selection to improve model performance",
+            "Developed high quality software and features in accordance with team requirements and feedback",
+            "Diagnosed and resolved a performance issue, resulting in a 30% increase in page rendering speed",
+            "Implemented unit test code and provided assistance in additional relevant test automation",
+            "Played a crucial role in advancing ongoing enhancements for existing and future systems",
           ],
         },
         {
-          title: "Data Scientist Trainee",
-          company: "Data Insights Ltd.",
-          location: "New York City",
-          date: "2016-2017",
+          title: "Co-Founder and Chief Innovation Officer",
+          company: "Popular Innovation Inc.",
+          location: "Calgary, AB",
+          date: "Jul 2019-Jun 2021",
           description: [
-            "Collaborated with external partners to integrate third-party data sources, expanding the company's data assets and enhancing predictive modeling capabilities.",
+            "Influenced and directed IT infrastructure to align with and drive critical business strategies and processes",
+            "Applied advanced expertise in emerging technologies to successfully achieve critical business objectives",
+            "Established agile and responsive teams for the milestones of both cloud-based and stand-alone systems",
+          ],
+        },
+        {
+          title: "Data Analyst and Blockchain Engineer",
+          company: "HACCTECH Ltd.",
+          location: "Calgary, AB",
+          date: "May 2021-Aug 2021",
+          description: [
+            "Utilized Python/SQL to conduct various Data Analytic tasks, EDA, data trending, feature extraction, pattern interpretation, BI dashboard",
+            "Fully implemented blockchain ecosystem by integrating cryptography, Ethereum, coupling with designing, multi-threaded coding, testing, troubleshooting",
           ],
         },
       ],
       education: [
         {
-          title: "Master of Science in Data Science",
-          university: "StellarTech University",
-          location: "Starville",
-          date: "2020-2022",
-          description: [
-            "Coursework included advanced machine learning, statistical modeling, and data visualization techniques.",
-            "Thesis: 'Predictive Modeling for Customer Churn in E-commerce using Random Forest.'",
-          ],
-        },
-        {
           title: "Bachelor of Science in Computer Science",
-          university: "Evergreen State University",
-          location: "Springdale",
-          date: "2012-2015",
+          university: "University of British Columbia",
+          location: "Vancouver, BC",
+          date: "2019-2024",
           description: [
-            "Relevant coursework in database management, algorithms, and programming languages.",
-            "Senior project: 'Development of a Recommender System for Movie Ratings.'",
+            "Leverage computer science and programming expertise with a refined and structured understanding.",
           ],
         },
       ],
@@ -481,7 +482,7 @@ export default {
       imageShape: "round",
       headlineWeight: "400",
       showImage: true,
-      resumeFormat: 'a4'
+      resumeFormat: 'letter'
     };
   },
   computed: {
@@ -570,7 +571,7 @@ export default {
 
 .resume-wrapper {
   margin-left: auto;
-  width: 210mm;
+  width: 8.5in;
 }
 
 #resume {
@@ -582,13 +583,13 @@ export default {
   For North America letter size use width: 8.5in; height: 11in; */
   
   /* use 296.8mm height instead of 297mm for a4 to prevent of page break */
-  height: 297mm;
+  height: 10.98in;
 }
 
-/* if letter format selected */
-#resume.edit-off.letter-format {
-  width: 8.5in;
-  height: 11in;
+/* if a4 format selected */
+#resume.edit-off.a4-format {
+  width: 210mm;
+  height: 296.8mm;
 }
 
 @media (min-width: 1350px) {
